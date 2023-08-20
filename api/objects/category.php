@@ -15,7 +15,8 @@ class Category
         $this->conn = $db;
     }
 
-    public function readAll(){
+    public function readAll()
+    {
         $query = "SELECT
                     id, name, description
                 FROM

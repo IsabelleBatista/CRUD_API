@@ -14,7 +14,8 @@ class Product
     public $category_name;
     public $created;
 
-    public function __construct($db) {
+    public function __construct($db)
+    {
         $this->conn = $db;
     }
 
@@ -200,7 +201,8 @@ class Product
             return $stmt;
     }
 
-    public function count(){
+    public function count()
+    {
         
         $query = "SELECT COUNT(*) as total_rows FROM " . $this->table_name . "";
       
